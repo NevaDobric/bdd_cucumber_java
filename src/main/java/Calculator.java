@@ -5,7 +5,7 @@ import java.util.List;
 public class Calculator {
 
     private final Deque<Number> stack = new LinkedList<>();
-    private static final List<String> OPERATORS = List.of("+","-");
+    private static final List<String> OPERATORS = List.of("+","-","?");
 
 
     public int additionResult(int num1, int num2) {
@@ -22,7 +22,7 @@ public class Calculator {
                 push(answer);
 
             }
-            else if(arg=="+"){
+            else if(arg=="+" || arg=="?"){
             answer = x.doubleValue()+y.doubleValue();
                 push(answer);
             }
