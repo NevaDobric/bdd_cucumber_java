@@ -2,16 +2,16 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class AdditionUnitTest {
+public class SubtractionUnitTest {
     @Test
-    public void add_int_1_and_int_2_returns_3(){
+    public void subtract_int_1_and_int_2_returns_3(){
         int a = 1;
         int b = 2;
-        Number expectedAnswer = 3.0;
+        Number expectedAnswer = 1.0;
         Calculator calc = new Calculator();
         calc.push(a);
         calc.push(b);
-        calc.push("+");
+        calc.push("-");
         Number actualAnswer = calc.value();
 
         assertEquals(expectedAnswer,actualAnswer);    }
